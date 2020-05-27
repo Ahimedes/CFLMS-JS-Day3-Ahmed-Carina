@@ -1,8 +1,13 @@
 function box_volume_and_area (width, height, depth) {
-	return width * height
-	return width * height * depth
+
+var area = width * height
+var volume = width * height * depth
+
+var result = [area, volume];
+
+ 	return result;
 }
- var area = box_volume_and_area(20,25);
- var volume = box_volume_and_area (20,25,10);
- document.write("The area of the box is = " + area +"<br>"); 
- document.write ("The volume of the box is = " + volume);
+ 
+ document.write("The area of the box is = " + box_volume_and_area(20,25)[0] + "<br>"); 
+ document.write ("The volume of the box is = " + box_volume_and_area(20,25,10)[1]);
+
