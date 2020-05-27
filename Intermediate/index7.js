@@ -1,12 +1,10 @@
-function Product(){
-	var i;
-	var prod = 1;
-	for (i = 1; i <= arguments.length; i++) {
-		prod *= arguments[i];
-		document.write(prod)
-	}
-	return prod;
-
+function capitalize(string){
+	var firstLetter = string.charAt(0);
+	var uppercase = firstLetter.toUpperCase();
+	var rest = string.slice(1)
+	var total = uppercase + rest
+	
+	document.write(total)
 }
 
-Product(10, 10, 10)
+capitalize("tea");
